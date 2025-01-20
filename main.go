@@ -1,12 +1,14 @@
 package main
 
-import rl "github.com/gen2brain/raylib-go/raylib"
+import (
+	rl "github.com/gen2brain/raylib-go/raylib"
+)
 
 func main() {
-	rl.InitWindow(800, 450, "raylib [core] example - basic window")
+	rl.InitWindow(800, 450, "ProjectGalateus MVP")
 	defer rl.CloseWindow()
 
-	rl.SetTargetFPS(60)
+	rl.SetTargetFPS(30)
 
 	for !rl.WindowShouldClose() {
 		rl.BeginDrawing()
